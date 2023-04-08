@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FE5F6D826E3EE6D5AA02B10 /* Pods_InstaPicture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1536AF2B81959DD40391D15F /* Pods_InstaPicture.framework */; };
 		46CB7D0429E2120C004946F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D0329E2120C004946F9 /* AppDelegate.swift */; };
 		46CB7D0629E2120C004946F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D0529E2120C004946F9 /* SceneDelegate.swift */; };
 		46CB7D0829E2120C004946F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D0729E2120C004946F9 /* ViewController.swift */; };
@@ -14,10 +15,16 @@
 		46CB7D0D29E2120D004946F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46CB7D0C29E2120D004946F9 /* Assets.xcassets */; };
 		46CB7D1029E2120D004946F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CB7D0E29E2120D004946F9 /* LaunchScreen.storyboard */; };
 		46CB7D1829E21615004946F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46CB7D1729E21606004946F9 /* GoogleService-Info.plist */; };
-		E6074B7AC1E0756FB0687EB2 /* Pods_InstaPicture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D506D017D2C91D813C065B3C /* Pods_InstaPicture.framework */; };
+		46CB7D1B29E22603004946F9 /* StringUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D1A29E22603004946F9 /* StringUtilities.swift */; };
+		46CB7D1D29E22670004946F9 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D1C29E22670004946F9 /* KeychainService.swift */; };
+		46CB7D2329E22879004946F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D2229E22879004946F9 /* HomeViewController.swift */; };
+		46CB7D2529E228A4004946F9 /* AddPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D2429E228A4004946F9 /* AddPictureViewController.swift */; };
+		46CB7D2729E228D0004946F9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D2629E228D0004946F9 /* ProfileViewController.swift */; };
+		46CB7D2929E228FD004946F9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D2829E228FD004946F9 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1536AF2B81959DD40391D15F /* Pods_InstaPicture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPicture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CB7D0029E2120C004946F9 /* InstaPicture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPicture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CB7D0329E2120C004946F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46CB7D0529E2120C004946F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,9 +34,14 @@
 		46CB7D0F29E2120D004946F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46CB7D1129E2120D004946F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46CB7D1729E21606004946F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A133BE4FFADB3510A6632879 /* Pods-InstaPicture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPicture.release.xcconfig"; path = "Target Support Files/Pods-InstaPicture/Pods-InstaPicture.release.xcconfig"; sourceTree = "<group>"; };
-		CECCC0DB8D17C7CA9FF1DCAD /* Pods-InstaPicture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPicture.debug.xcconfig"; path = "Target Support Files/Pods-InstaPicture/Pods-InstaPicture.debug.xcconfig"; sourceTree = "<group>"; };
-		D506D017D2C91D813C065B3C /* Pods_InstaPicture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPicture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46CB7D1A29E22603004946F9 /* StringUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtilities.swift; sourceTree = "<group>"; };
+		46CB7D1C29E22670004946F9 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		46CB7D2229E22879004946F9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		46CB7D2429E228A4004946F9 /* AddPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPictureViewController.swift; sourceTree = "<group>"; };
+		46CB7D2629E228D0004946F9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		46CB7D2829E228FD004946F9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CFDF20A579E4A9A2E85107D6 /* Pods-InstaPicture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPicture.debug.xcconfig"; path = "Target Support Files/Pods-InstaPicture/Pods-InstaPicture.debug.xcconfig"; sourceTree = "<group>"; };
+		D7C45C034E3F0735F726C5BD /* Pods-InstaPicture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPicture.release.xcconfig"; path = "Target Support Files/Pods-InstaPicture/Pods-InstaPicture.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6074B7AC1E0756FB0687EB2 /* Pods_InstaPicture.framework in Frameworks */,
+				1FE5F6D826E3EE6D5AA02B10 /* Pods_InstaPicture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,10 +59,9 @@
 		09EA411ED8B7CEE570733AA9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CECCC0DB8D17C7CA9FF1DCAD /* Pods-InstaPicture.debug.xcconfig */,
-				A133BE4FFADB3510A6632879 /* Pods-InstaPicture.release.xcconfig */,
+				CFDF20A579E4A9A2E85107D6 /* Pods-InstaPicture.debug.xcconfig */,
+				D7C45C034E3F0735F726C5BD /* Pods-InstaPicture.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -60,7 +71,7 @@
 				46CB7D0229E2120C004946F9 /* InstaPicture */,
 				46CB7D0129E2120C004946F9 /* Products */,
 				09EA411ED8B7CEE570733AA9 /* Pods */,
-				5256C6801B1370D47C200518 /* Frameworks */,
+				E963FCBDD4B4CA7483A9E96A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,10 +86,12 @@
 		46CB7D0229E2120C004946F9 /* InstaPicture */ = {
 			isa = PBXGroup;
 			children = (
+				46CB7D2029E227F6004946F9 /* Controller */,
+				46CB7D1F29E227F0004946F9 /* View */,
+				46CB7D1E29E227EA004946F9 /* Model */,
+				46CB7D1929E225F1004946F9 /* Utilities */,
 				46CB7D0329E2120C004946F9 /* AppDelegate.swift */,
 				46CB7D0529E2120C004946F9 /* SceneDelegate.swift */,
-				46CB7D0729E2120C004946F9 /* ViewController.swift */,
-				46CB7D0929E2120C004946F9 /* Main.storyboard */,
 				46CB7D0C29E2120D004946F9 /* Assets.xcassets */,
 				46CB7D0E29E2120D004946F9 /* LaunchScreen.storyboard */,
 				46CB7D1129E2120D004946F9 /* Info.plist */,
@@ -87,10 +100,46 @@
 			path = InstaPicture;
 			sourceTree = "<group>";
 		};
-		5256C6801B1370D47C200518 /* Frameworks */ = {
+		46CB7D1929E225F1004946F9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				D506D017D2C91D813C065B3C /* Pods_InstaPicture.framework */,
+				46CB7D1A29E22603004946F9 /* StringUtilities.swift */,
+				46CB7D1C29E22670004946F9 /* KeychainService.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		46CB7D1E29E227EA004946F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46CB7D1F29E227F0004946F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46CB7D0929E2120C004946F9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46CB7D2029E227F6004946F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46CB7D0729E2120C004946F9 /* ViewController.swift */,
+				46CB7D2229E22879004946F9 /* HomeViewController.swift */,
+				46CB7D2429E228A4004946F9 /* AddPictureViewController.swift */,
+				46CB7D2629E228D0004946F9 /* ProfileViewController.swift */,
+				46CB7D2829E228FD004946F9 /* SearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E963FCBDD4B4CA7483A9E96A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1536AF2B81959DD40391D15F /* Pods_InstaPicture.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,12 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46CB7D1429E2120D004946F9 /* Build configuration list for PBXNativeTarget "InstaPicture" */;
 			buildPhases = (
-				1B759731CC07750BE9E7A748 /* [CP] Check Pods Manifest.lock */,
+				9E411461FD677BED3CC76D0C /* [CP] Check Pods Manifest.lock */,
 				46CB7CFC29E2120C004946F9 /* Sources */,
 				46CB7CFD29E2120C004946F9 /* Frameworks */,
 				46CB7CFE29E2120C004946F9 /* Resources */,
-				9DDD98CDAE69513A900DB252 /* [CP] Embed Pods Frameworks */,
-				97A6C5A036C75B3EC48BB205 /* [CP] Copy Pods Resources */,
+				13EE5DA651A11DB2C5FF4B37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,7 +214,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1B759731CC07750BE9E7A748 /* [CP] Check Pods Manifest.lock */ = {
+		13EE5DA651A11DB2C5FF4B37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E411461FD677BED3CC76D0C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -188,40 +253,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		97A6C5A036C75B3EC48BB205 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9DDD98CDAE69513A900DB252 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -230,8 +261,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				46CB7D0829E2120C004946F9 /* ViewController.swift in Sources */,
+				46CB7D2529E228A4004946F9 /* AddPictureViewController.swift in Sources */,
 				46CB7D0429E2120C004946F9 /* AppDelegate.swift in Sources */,
+				46CB7D2929E228FD004946F9 /* SearchViewController.swift in Sources */,
 				46CB7D0629E2120C004946F9 /* SceneDelegate.swift in Sources */,
+				46CB7D1D29E22670004946F9 /* KeychainService.swift in Sources */,
+				46CB7D1B29E22603004946F9 /* StringUtilities.swift in Sources */,
+				46CB7D2729E228D0004946F9 /* ProfileViewController.swift in Sources */,
+				46CB7D2329E22879004946F9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -361,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -373,7 +410,7 @@
 		};
 		46CB7D1529E2120D004946F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CECCC0DB8D17C7CA9FF1DCAD /* Pods-InstaPicture.debug.xcconfig */;
+			baseConfigurationReference = CFDF20A579E4A9A2E85107D6 /* Pods-InstaPicture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -387,6 +424,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,7 +440,7 @@
 		};
 		46CB7D1629E2120D004946F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A133BE4FFADB3510A6632879 /* Pods-InstaPicture.release.xcconfig */;
+			baseConfigurationReference = D7C45C034E3F0735F726C5BD /* Pods-InstaPicture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -416,6 +454,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
