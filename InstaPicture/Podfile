@@ -13,5 +13,6 @@ target 'InstaPicture' do
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
   pod 'KeychainSwift', '~> 20.0'
+  pod 'FirebaseStorage'
 
 end

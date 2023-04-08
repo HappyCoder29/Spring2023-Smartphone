@@ -178,22 +178,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBb-fa-jU8">
-                                <rect key="frame" x="175" y="416" width="31" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderImage" translatesAutoresizingMaskIntoConstraints="NO" id="HRm-Gj-51U">
+                                <rect key="frame" x="20" y="123" width="353" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="ZXk-Dd-PFf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCw-cz-Fdf">
+                                <rect key="frame" x="20" y="453" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uR3-Se-4Sl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Take a Picture"/>
+                                <connections>
+                                    <action selector="takeAPicAction:" destination="m7a-5w-SS8" eventType="touchUpInside" id="xCX-Wl-5Dg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5l-Pb-GiC">
+                                <rect key="frame" x="20" y="699" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hJY-NB-CBk"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upload Picture"/>
+                                <connections>
+                                    <action selector="uploadPicture:" destination="m7a-5w-SS8" eventType="touchUpInside" id="5Lz-xf-u4R"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter title for the picture" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IjB-lx-Mq2">
+                                <rect key="frame" x="20" y="639" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UyN-1l-eac"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cRP-mj-vDW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cRP-mj-vDW" firstAttribute="bottom" secondItem="i5l-Pb-GiC" secondAttribute="bottom" constant="30" id="3y5-l5-NVP"/>
+                            <constraint firstItem="cRP-mj-vDW" firstAttribute="trailing" secondItem="IjB-lx-Mq2" secondAttribute="trailing" constant="20" id="5W4-dw-ocP"/>
+                            <constraint firstItem="cRP-mj-vDW" firstAttribute="trailing" secondItem="KCw-cz-Fdf" secondAttribute="trailing" constant="20" id="BbA-hv-auF"/>
+                            <constraint firstItem="KCw-cz-Fdf" firstAttribute="top" secondItem="HRm-Gj-51U" secondAttribute="bottom" constant="30" id="EOa-Oh-KDu"/>
+                            <constraint firstItem="IjB-lx-Mq2" firstAttribute="leading" secondItem="cRP-mj-vDW" secondAttribute="leading" constant="20" id="HDL-0m-rS9"/>
+                            <constraint firstItem="KCw-cz-Fdf" firstAttribute="leading" secondItem="cRP-mj-vDW" secondAttribute="leading" constant="20" id="JWi-7c-MD0"/>
+                            <constraint firstItem="cRP-mj-vDW" firstAttribute="trailing" secondItem="HRm-Gj-51U" secondAttribute="trailing" constant="20" id="KJN-nU-142"/>
+                            <constraint firstItem="i5l-Pb-GiC" firstAttribute="leading" secondItem="cRP-mj-vDW" secondAttribute="leading" constant="20" id="UPv-2q-9Dn"/>
+                            <constraint firstItem="i5l-Pb-GiC" firstAttribute="top" secondItem="IjB-lx-Mq2" secondAttribute="bottom" constant="20" id="h0U-39-tYw"/>
+                            <constraint firstItem="HRm-Gj-51U" firstAttribute="leading" secondItem="cRP-mj-vDW" secondAttribute="leading" constant="20" id="rnq-Lg-lqE"/>
+                            <constraint firstItem="HRm-Gj-51U" firstAttribute="top" secondItem="cRP-mj-vDW" secondAttribute="top" constant="20" id="uGT-Ll-eX1"/>
+                            <constraint firstItem="cRP-mj-vDW" firstAttribute="trailing" secondItem="i5l-Pb-GiC" secondAttribute="trailing" constant="20" id="wqd-nc-xpO"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add" image="plus.app.fill" catalog="system" id="q2m-Rd-M0n"/>
+                    <connections>
+                        <outlet property="imgView" destination="HRm-Gj-51U" id="zQM-RN-8PK"/>
+                        <outlet property="txtTitle" destination="IjB-lx-Mq2" id="57n-qd-n5i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLD-ym-5k7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3830" y="-508"/>
+            <point key="canvasLocation" x="3829.770992366412" y="-508.45070422535213"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ROm-wx-14i">

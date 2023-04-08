@@ -43,11 +43,11 @@ class ViewController: UIViewController {
             return
         }
         
-        if password.isValidPassword == false {
-            lblStatus.text = "Enter valid password"
-            lblStatus.isHidden = false
-            return
-        }
+//        if password.isValidPassword == false {
+//            lblStatus.text = "Enter valid password"
+//            lblStatus.isHidden = false
+//            return
+//        }
         
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             guard let strongSelf = self else { return }

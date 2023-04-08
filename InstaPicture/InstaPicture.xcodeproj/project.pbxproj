@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FE5F6D826E3EE6D5AA02B10 /* Pods_InstaPicture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1536AF2B81959DD40391D15F /* Pods_InstaPicture.framework */; };
 		46CB7D0429E2120C004946F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D0329E2120C004946F9 /* AppDelegate.swift */; };
 		46CB7D0629E2120C004946F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D0529E2120C004946F9 /* SceneDelegate.swift */; };
 		46CB7D0829E2120C004946F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D0729E2120C004946F9 /* ViewController.swift */; };
@@ -21,10 +20,11 @@
 		46CB7D2529E228A4004946F9 /* AddPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D2429E228A4004946F9 /* AddPictureViewController.swift */; };
 		46CB7D2729E228D0004946F9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D2629E228D0004946F9 /* ProfileViewController.swift */; };
 		46CB7D2929E228FD004946F9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB7D2829E228FD004946F9 /* SearchViewController.swift */; };
+		7F2C5206C6F971273C1981D5 /* Pods_InstaPicture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A655EA9886A95D428DEC9A4E /* Pods_InstaPicture.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1536AF2B81959DD40391D15F /* Pods_InstaPicture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPicture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F11DC602565E49654B73018 /* Pods-InstaPicture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPicture.debug.xcconfig"; path = "Target Support Files/Pods-InstaPicture/Pods-InstaPicture.debug.xcconfig"; sourceTree = "<group>"; };
 		46CB7D0029E2120C004946F9 /* InstaPicture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPicture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CB7D0329E2120C004946F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46CB7D0529E2120C004946F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +40,8 @@
 		46CB7D2429E228A4004946F9 /* AddPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPictureViewController.swift; sourceTree = "<group>"; };
 		46CB7D2629E228D0004946F9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		46CB7D2829E228FD004946F9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		CFDF20A579E4A9A2E85107D6 /* Pods-InstaPicture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPicture.debug.xcconfig"; path = "Target Support Files/Pods-InstaPicture/Pods-InstaPicture.debug.xcconfig"; sourceTree = "<group>"; };
-		D7C45C034E3F0735F726C5BD /* Pods-InstaPicture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPicture.release.xcconfig"; path = "Target Support Files/Pods-InstaPicture/Pods-InstaPicture.release.xcconfig"; sourceTree = "<group>"; };
+		A655EA9886A95D428DEC9A4E /* Pods_InstaPicture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPicture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E787A2F00D9427196BEE656C /* Pods-InstaPicture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPicture.release.xcconfig"; path = "Target Support Files/Pods-InstaPicture/Pods-InstaPicture.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE5F6D826E3EE6D5AA02B10 /* Pods_InstaPicture.framework in Frameworks */,
+				7F2C5206C6F971273C1981D5 /* Pods_InstaPicture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +59,8 @@
 		09EA411ED8B7CEE570733AA9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CFDF20A579E4A9A2E85107D6 /* Pods-InstaPicture.debug.xcconfig */,
-				D7C45C034E3F0735F726C5BD /* Pods-InstaPicture.release.xcconfig */,
+				2F11DC602565E49654B73018 /* Pods-InstaPicture.debug.xcconfig */,
+				E787A2F00D9427196BEE656C /* Pods-InstaPicture.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -71,7 +71,7 @@
 				46CB7D0229E2120C004946F9 /* InstaPicture */,
 				46CB7D0129E2120C004946F9 /* Products */,
 				09EA411ED8B7CEE570733AA9 /* Pods */,
-				E963FCBDD4B4CA7483A9E96A /* Frameworks */,
+				EEC44F22200C9B6A8E2A13ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,10 +136,10 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E963FCBDD4B4CA7483A9E96A /* Frameworks */ = {
+		EEC44F22200C9B6A8E2A13ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1536AF2B81959DD40391D15F /* Pods_InstaPicture.framework */,
+				A655EA9886A95D428DEC9A4E /* Pods_InstaPicture.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,11 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46CB7D1429E2120D004946F9 /* Build configuration list for PBXNativeTarget "InstaPicture" */;
 			buildPhases = (
-				9E411461FD677BED3CC76D0C /* [CP] Check Pods Manifest.lock */,
+				1CA1542E73742A81098A1DD0 /* [CP] Check Pods Manifest.lock */,
 				46CB7CFC29E2120C004946F9 /* Sources */,
 				46CB7CFD29E2120C004946F9 /* Frameworks */,
 				46CB7CFE29E2120C004946F9 /* Resources */,
-				13EE5DA651A11DB2C5FF4B37 /* [CP] Embed Pods Frameworks */,
+				A5F5163DA716E6F13D324681 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,24 +214,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		13EE5DA651A11DB2C5FF4B37 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9E411461FD677BED3CC76D0C /* [CP] Check Pods Manifest.lock */ = {
+		1CA1542E73742A81098A1DD0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,6 +234,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5F5163DA716E6F13D324681 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -410,7 +410,7 @@
 		};
 		46CB7D1529E2120D004946F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFDF20A579E4A9A2E85107D6 /* Pods-InstaPicture.debug.xcconfig */;
+			baseConfigurationReference = 2F11DC602565E49654B73018 /* Pods-InstaPicture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,7 +440,7 @@
 		};
 		46CB7D1629E2120D004946F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7C45C034E3F0735F726C5BD /* Pods-InstaPicture.release.xcconfig */;
+			baseConfigurationReference = E787A2F00D9427196BEE656C /* Pods-InstaPicture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
