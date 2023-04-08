@@ -13,6 +13,8 @@
 		46CB7D0B29E2120C004946F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CB7D0929E2120C004946F9 /* Main.storyboard */; };
 		46CB7D0D29E2120D004946F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46CB7D0C29E2120D004946F9 /* Assets.xcassets */; };
 		46CB7D1029E2120D004946F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CB7D0E29E2120D004946F9 /* LaunchScreen.storyboard */; };
+		46CB7D1829E21615004946F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46CB7D1729E21606004946F9 /* GoogleService-Info.plist */; };
+		E6074B7AC1E0756FB0687EB2 /* Pods_InstaPicture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D506D017D2C91D813C065B3C /* Pods_InstaPicture.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		46CB7D0C29E2120D004946F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46CB7D0F29E2120D004946F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46CB7D1129E2120D004946F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46CB7D1729E21606004946F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A133BE4FFADB3510A6632879 /* Pods-InstaPicture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPicture.release.xcconfig"; path = "Target Support Files/Pods-InstaPicture/Pods-InstaPicture.release.xcconfig"; sourceTree = "<group>"; };
+		CECCC0DB8D17C7CA9FF1DCAD /* Pods-InstaPicture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPicture.debug.xcconfig"; path = "Target Support Files/Pods-InstaPicture/Pods-InstaPicture.debug.xcconfig"; sourceTree = "<group>"; };
+		D506D017D2C91D813C065B3C /* Pods_InstaPicture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPicture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6074B7AC1E0756FB0687EB2 /* Pods_InstaPicture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09EA411ED8B7CEE570733AA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CECCC0DB8D17C7CA9FF1DCAD /* Pods-InstaPicture.debug.xcconfig */,
+				A133BE4FFADB3510A6632879 /* Pods-InstaPicture.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		46CB7CF729E2120B004946F9 = {
 			isa = PBXGroup;
 			children = (
 				46CB7D0229E2120C004946F9 /* InstaPicture */,
 				46CB7D0129E2120C004946F9 /* Products */,
+				09EA411ED8B7CEE570733AA9 /* Pods */,
+				5256C6801B1370D47C200518 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +82,17 @@
 				46CB7D0C29E2120D004946F9 /* Assets.xcassets */,
 				46CB7D0E29E2120D004946F9 /* LaunchScreen.storyboard */,
 				46CB7D1129E2120D004946F9 /* Info.plist */,
+				46CB7D1729E21606004946F9 /* GoogleService-Info.plist */,
 			);
 			path = InstaPicture;
+			sourceTree = "<group>";
+		};
+		5256C6801B1370D47C200518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D506D017D2C91D813C065B3C /* Pods_InstaPicture.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46CB7D1429E2120D004946F9 /* Build configuration list for PBXNativeTarget "InstaPicture" */;
 			buildPhases = (
+				1B759731CC07750BE9E7A748 /* [CP] Check Pods Manifest.lock */,
 				46CB7CFC29E2120C004946F9 /* Sources */,
 				46CB7CFD29E2120C004946F9 /* Frameworks */,
 				46CB7CFE29E2120C004946F9 /* Resources */,
+				9DDD98CDAE69513A900DB252 /* [CP] Embed Pods Frameworks */,
+				97A6C5A036C75B3EC48BB205 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,12 +157,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				46CB7D1029E2120D004946F9 /* LaunchScreen.storyboard in Resources */,
+				46CB7D1829E21615004946F9 /* GoogleService-Info.plist in Resources */,
 				46CB7D0D29E2120D004946F9 /* Assets.xcassets in Resources */,
 				46CB7D0B29E2120C004946F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B759731CC07750BE9E7A748 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaPicture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97A6C5A036C75B3EC48BB205 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DDD98CDAE69513A900DB252 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaPicture/Pods-InstaPicture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46CB7CFC29E2120C004946F9 /* Sources */ = {
@@ -282,6 +373,7 @@
 		};
 		46CB7D1529E2120D004946F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CECCC0DB8D17C7CA9FF1DCAD /* Pods-InstaPicture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +402,7 @@
 		};
 		46CB7D1629E2120D004946F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A133BE4FFADB3510A6632879 /* Pods-InstaPicture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
