@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import RealmSwift
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UploadImageProtocol {
     
-    
+    let realm = try! Realm()
     
     var images : [UIImage] = [UIImage]()
     var locations = [String]()

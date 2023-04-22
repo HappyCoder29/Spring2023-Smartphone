@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46316FD729F48D8E00785264 /* InstaImageCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46316FD629F48D8E00785264 /* InstaImageCellData.swift */; };
 		46E16EBC29EB658200D8855E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E16EBB29EB658200D8855E /* AppDelegate.swift */; };
 		46E16EBE29EB658200D8855E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E16EBD29EB658200D8855E /* SceneDelegate.swift */; };
 		46E16EC329EB658200D8855E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E16EC129EB658200D8855E /* Main.storyboard */; };
@@ -16,9 +17,12 @@
 		46E16ED229EB666E00D8855E /* UploadImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E16ED129EB666E00D8855E /* UploadImageViewController.swift */; };
 		46E16ED429EB698400D8855E /* UploadImageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E16ED329EB698400D8855E /* UploadImageProtocol.swift */; };
 		46E16ED629EB6E7300D8855E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E16ED529EB6E7300D8855E /* TabBarViewController.swift */; };
+		FC4F717186001A2139CAD0E0 /* Pods_InstaWithoutDBAndCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642926F0ACFA7DDAFF2D44BF /* Pods_InstaWithoutDBAndCloud.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FB3AEA6186FDB2253920EBC /* Pods-InstaWithoutDBAndCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaWithoutDBAndCloud.debug.xcconfig"; path = "Target Support Files/Pods-InstaWithoutDBAndCloud/Pods-InstaWithoutDBAndCloud.debug.xcconfig"; sourceTree = "<group>"; };
+		46316FD629F48D8E00785264 /* InstaImageCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaImageCellData.swift; sourceTree = "<group>"; };
 		46E16EB829EB658200D8855E /* InstaWithoutDBAndCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaWithoutDBAndCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E16EBB29EB658200D8855E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46E16EBD29EB658200D8855E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		46E16ED129EB666E00D8855E /* UploadImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageViewController.swift; sourceTree = "<group>"; };
 		46E16ED329EB698400D8855E /* UploadImageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageProtocol.swift; sourceTree = "<group>"; };
 		46E16ED529EB6E7300D8855E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4AF7B620330A180171D1A9D2 /* Pods-InstaWithoutDBAndCloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaWithoutDBAndCloud.release.xcconfig"; path = "Target Support Files/Pods-InstaWithoutDBAndCloud/Pods-InstaWithoutDBAndCloud.release.xcconfig"; sourceTree = "<group>"; };
+		642926F0ACFA7DDAFF2D44BF /* Pods_InstaWithoutDBAndCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaWithoutDBAndCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4F717186001A2139CAD0E0 /* Pods_InstaWithoutDBAndCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				46E16EBA29EB658200D8855E /* InstaWithoutDBAndCloud */,
 				46E16EB929EB658200D8855E /* Products */,
+				B7D01F1A19BC3C8E10EA5A71 /* Pods */,
+				C339C4333F3F012E7542AD0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +81,26 @@
 				46E16ED129EB666E00D8855E /* UploadImageViewController.swift */,
 				46E16ED329EB698400D8855E /* UploadImageProtocol.swift */,
 				46E16ED529EB6E7300D8855E /* TabBarViewController.swift */,
+				46316FD629F48D8E00785264 /* InstaImageCellData.swift */,
 			);
 			path = InstaWithoutDBAndCloud;
+			sourceTree = "<group>";
+		};
+		B7D01F1A19BC3C8E10EA5A71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FB3AEA6186FDB2253920EBC /* Pods-InstaWithoutDBAndCloud.debug.xcconfig */,
+				4AF7B620330A180171D1A9D2 /* Pods-InstaWithoutDBAndCloud.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C339C4333F3F012E7542AD0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				642926F0ACFA7DDAFF2D44BF /* Pods_InstaWithoutDBAndCloud.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46E16ECC29EB658400D8855E /* Build configuration list for PBXNativeTarget "InstaWithoutDBAndCloud" */;
 			buildPhases = (
+				0E78909276231DB1D2F4714E /* [CP] Check Pods Manifest.lock */,
 				46E16EB429EB658200D8855E /* Sources */,
 				46E16EB529EB658200D8855E /* Frameworks */,
 				46E16EB629EB658200D8855E /* Resources */,
+				D392619491140E7569CECB32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +171,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E78909276231DB1D2F4714E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaWithoutDBAndCloud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D392619491140E7569CECB32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaWithoutDBAndCloud/Pods-InstaWithoutDBAndCloud-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaWithoutDBAndCloud/Pods-InstaWithoutDBAndCloud-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaWithoutDBAndCloud/Pods-InstaWithoutDBAndCloud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46E16EB429EB658200D8855E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -149,6 +220,7 @@
 			files = (
 				46E16EBC29EB658200D8855E /* AppDelegate.swift in Sources */,
 				46E16ED229EB666E00D8855E /* UploadImageViewController.swift in Sources */,
+				46316FD729F48D8E00785264 /* InstaImageCellData.swift in Sources */,
 				46E16ED429EB698400D8855E /* UploadImageProtocol.swift in Sources */,
 				46E16EBE29EB658200D8855E /* SceneDelegate.swift in Sources */,
 				46E16ED629EB6E7300D8855E /* TabBarViewController.swift in Sources */,
@@ -294,6 +366,7 @@
 		};
 		46E16ECD29EB658400D8855E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB3AEA6186FDB2253920EBC /* Pods-InstaWithoutDBAndCloud.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +395,7 @@
 		};
 		46E16ECE29EB658400D8855E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF7B620330A180171D1A9D2 /* Pods-InstaWithoutDBAndCloud.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

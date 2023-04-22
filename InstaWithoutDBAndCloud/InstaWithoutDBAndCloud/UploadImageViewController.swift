@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class UploadImageViewController: UIViewController {
 
@@ -13,6 +14,8 @@ class UploadImageViewController: UIViewController {
     @IBOutlet weak var txtTitle: UITextField!
     @IBOutlet weak var imgView: UIImageView!
     var uploadProtocol: UploadImageProtocol?
+    let realm = try! Realm()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,21 @@ class UploadImageViewController: UIViewController {
         guard let location = lblLocation.text else {return}
         guard let title = txtTitle.text else {return}
         
+        let imageData: Data? = img.pngData()
+        
+        let imgData: InstaImageCelldata = InstaImageCelldata()
+        imgData.title = title
+        imgData.location = location
+        imgData.Image = imageData
+       
+        // Add to the Realm
+        do {
+            try realm.write {
+                realm.add(imgData, update: .modified)
+            }
+        } catch let error as NSError {
+            print("Unable to add values to the DB " + error.localizedDescription)
+        }
         uploadProtocol?.uploadedImageDelegate(img: img, locationImg: location, titleImg: title)
         
         
